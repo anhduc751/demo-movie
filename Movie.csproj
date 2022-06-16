@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA76AFAD-B572-4D3A-9FD5-EAE5E391C0C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TungMovie</RootNamespace>
+    <AssemblyName>TungMovie</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminManagement.Designer.cs">
+      <DependentUpon>AdminManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyTicketManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyTicketManagement.Designer.cs">
+      <DependentUpon>BuyTicketManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\CharacterInfo.cs" />
+    <Compile Include="Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomRounded.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DB layer\DB.cs" />
+    <Compile Include="EditInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInfo.Designer.cs">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmManagement.Designer.cs">
+      <DependentUpon>FilmManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuCustomer.Designer.cs">
+      <DependentUpon>FormMenuCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\GraphicsExtension.cs" />
+    <Compile Include="BS layer\ListMovie.cs" />
+    <Compile Include="ListSuccessedTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListSuccessedTicket.Designer.cs">
+      <DependentUpon>ListSuccessedTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\Statistics.cs" />
+    <Compile Include="StatisticsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsManagement.Designer.cs">
+      <DependentUpon>StatisticsManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListCharater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListCharater.Designer.cs">
+      <DependentUpon>ListCharater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListMV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListMV.Designer.cs">
+      <DependentUpon>ListMV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm.Designer.cs">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\MovieInfo.cs" />
+    <Compile Include="BS layer\PaymentStrategy.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BS layer\Room.cs" />
+    <Compile Include="RoomManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomManagement.Designer.cs">
+      <DependentUpon>RoomManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyTicket.Designer.cs">
+      <DependentUpon>BuyTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\Schedule.cs" />
+    <Compile Include="ScheduleManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleManagement.Designer.cs">
+      <DependentUpon>ScheduleManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\Seat.cs" />
+    <Compile Include="SeatManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeatManagement.Designer.cs">
+      <DependentUpon>SeatManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\Ticket.cs" />
+    <Compile Include="TicketManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketManagement.Designer.cs">
+      <DependentUpon>TicketManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS layer\User.cs" />
+    <Compile Include="BS layer\UserStore.cs" />
+    <EmbeddedResource Include="AdminManagement.resx">
+      <DependentUpon>AdminManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyTicketManagement.resx">
+      <DependentUpon>BuyTicketManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInfo.resx">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmManagement.resx">
+      <DependentUpon>FilmManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuCustomer.resx">
+      <DependentUpon>FormMenuCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListSuccessedTicket.resx">
+      <DependentUpon>ListSuccessedTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsManagement.resx">
+      <DependentUpon>StatisticsManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListCharater.resx">
+      <DependentUpon>ListCharater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListMV.resx">
+      <DependentUpon>ListMV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm.resx">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoomManagement.resx">
+      <DependentUpon>RoomManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyTicket.resx">
+      <DependentUpon>BuyTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleManagement.resx">
+      <DependentUpon>ScheduleManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeatManagement.resx">
+      <DependentUpon>SeatManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketManagement.resx">
+      <DependentUpon>TicketManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popcorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film-reel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\vip.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
