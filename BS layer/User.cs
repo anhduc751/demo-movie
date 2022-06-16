@@ -35,28 +35,15 @@ namespace TungMovie
                 return false;
             }
         }
-        public void auth_register(string username, string password, string fullname,string address, DateTime year,string phonenumber,string email )
+        public DataSet auth_register(string username, string password, string fullname, string address, DateTime year, string phonenumber, string email)
         {
-               using (SqlConnection conn = new SqlConnection(@"Data Source=PC;Initial Catalog=Movie_ticket_management;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
-              using (var cmd = new SqlCommand("dbo.proc_Add_account", conn)
-            {
-                CommandType = CommandType.StoredProcedure
-            })
-            {
-                conn.Open();
-                cmd.Parameters.Add("@username", SqlDbType.NVarChar).Value = username;
-                cmd.Parameters.Add("@password", SqlDbType.NVarChar).Value = password;
-                cmd.Parameters.Add("@fullname", SqlDbType.NVarChar).Value = fullname;
-                cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = address;
-                cmd.Parameters.Add("@phone", SqlDbType.NVarChar).Value = phonenumber;
-                cmd.Parameters.Add("@birthday", SqlDbType.NVarChar).Value = year;
-                cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = email;
-                cmd.Parameters.Add("@balance", SqlDbType.Float).Value = 0;
-                cmd.Parameters.Add("@roleCode", SqlDbType.NVarChar).Value = "USER";
-                cmd.Parameters.Add("@createdBy", SqlDbType.NVarChar).Value = "";
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
+            SqlCommand command = new SqlCommand("INSERT INTO [Movie_ticket_management].[dbo].[User] (username, password, fullname, address, phone, birthday, email, balance, role_code) " +
+                                                "VALUES ('"+username+"', '"+password+"', '"+fullname+"', '"+address+"', '"+phonenumber+"', CAST('"+year+"' AS Date), '"+email+"', 0, 'USER')", db.GetConnection);
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+            DataSet dt = new DataSet();
+            sda.Fill(dt);
+            return dt;
+
         }
 
         public string getrole(string username)
