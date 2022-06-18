@@ -125,7 +125,8 @@ namespace Movie_management
                 string kind = txtKind.Text.ToString();
                 string status = boxStatus.SelectedItem.ToString();
                 int seat_id = Int32.Parse(boxSeatId.SelectedValue.ToString());
-                if (se.updateSeat(id, code, kind, status, seat_id))
+                int room_id = Int32.Parse(txtIdRoom.Text.ToString());
+                if (se.updateSeat(id, code, kind, status, room_id))
                 {
                     MessageBox.Show("Update Seat Successful", "Seat", MessageBoxButtons.OK);
                     refresh();
