@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 
 
-namespace TungMovie
+namespace Movie_management
 {
 	class User
 	{
@@ -37,6 +37,7 @@ namespace TungMovie
         }
         public DataSet auth_register(string username, string password, string fullname, string address, DateTime year, string phonenumber, string email)
         {
+            string a = year.ToString();
             SqlCommand command = new SqlCommand("INSERT INTO [Movie_ticket_management].[dbo].[User] (username, password, fullname, address, phone, birthday, email, balance, role_code) " +
                                                 "VALUES ('"+username+"', '"+password+"', '"+fullname+"', '"+address+"', '"+phonenumber+"', CAST('"+year+"' AS Date), '"+email+"', 0, 'USER')", db.GetConnection);
             SqlDataAdapter sda = new SqlDataAdapter(command);

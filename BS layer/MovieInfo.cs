@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 
-namespace TungMovie
+namespace Movie_management
 {
 	class MovieInfo
 	{

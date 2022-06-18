@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TungMovie.Properties {
+namespace Movie_management.Properties {
     using System;
     
     

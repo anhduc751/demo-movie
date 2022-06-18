@@ -1,5 +1,5 @@
 ﻿
-namespace TungMovie
+namespace Movie_management
 {
     partial class StatisticsManagement
     {
@@ -32,8 +32,8 @@ namespace TungMovie
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.statisticschart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.btnRefresh = new TungMovie.RButton();
-            this.btnCancel = new TungMovie.RButton();
+            this.btnRefresh = new Movie_management.RButton();
+            this.btnCancel = new Movie_management.RButton();
             ((System.ComponentModel.ISupportInitialize)(this.statisticschart)).BeginInit();
             this.SuspendLayout();
             // 

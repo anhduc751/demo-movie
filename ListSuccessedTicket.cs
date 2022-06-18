@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Microsoft.Office.Interop.Word;
 
-namespace TungMovie
+namespace Movie_management
 {
 	public partial class ListSuccessedTicket : Form
 	{

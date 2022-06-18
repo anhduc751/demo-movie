@@ -1,5 +1,5 @@
 ﻿
-namespace TungMovie
+namespace Movie_management
 {
 	partial class FormLogin
 	{
@@ -157,7 +157,7 @@ namespace TungMovie
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::TungMovie.Properties.Resources.film_reel;
+            this.pictureBox1.Image = global::Movie_management.Properties.Resources.film_reel;
             this.pictureBox1.Location = new System.Drawing.Point(282, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 106);

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace TungMovie
+namespace Movie_management
 {
     public partial class UserManagement : Form
     {
@@ -19,7 +19,7 @@ namespace TungMovie
         }
         SqlConnection connection;
         SqlCommand command;
-        string str2 = @"Data Source=Fox/Fox;Initial Catalog=Movie_ticket_management;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string str2 = @"Data Source=LAPTOP-3NHLU4HH\DUCNGUYEN;Initial Catalog=Movie_ticket_management;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         private void btnClear_Click(object sender, EventArgs e)

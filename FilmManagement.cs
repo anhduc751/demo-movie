@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 
-namespace TungMovie
+namespace Movie_management
 {
     public partial class Film_management : Form
     {

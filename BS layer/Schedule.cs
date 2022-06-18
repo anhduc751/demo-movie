@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace TungMovie
+namespace Movie_management
 {
     internal class Schedule
     {

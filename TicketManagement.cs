@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TungMovie
+namespace Movie_management
 {
     public partial class TicketManagement : Form
     {

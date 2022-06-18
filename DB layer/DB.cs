@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace TungMovie
+namespace Movie_management
 {
     class DB
     {

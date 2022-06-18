@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace TungMovie
+namespace Movie_management
 {
     public partial class ListCharater : Form
     {

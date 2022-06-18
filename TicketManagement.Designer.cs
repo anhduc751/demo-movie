@@ -1,5 +1,5 @@
 ﻿
-namespace TungMovie
+namespace Movie_management
 {
     partial class TicketManagement
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TungMovie
+namespace Movie_management
 {
     static class GraphicsExtension
     {

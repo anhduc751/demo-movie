@@ -6,7 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace TungMovie
+namespace Movie_management
 {
     internal class ListMovie
     {
